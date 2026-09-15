@@ -3,19 +3,308 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>株式会社豊栄製作所</title>
+  <title>サニタリー加工・溶接・研磨なら豊栄製作所にお任せください！</title>
+  <meta name="description" content="食品・医薬品設備に求められるサニタリー加工なら、豊栄製作所にお任せください！TIG溶接・レーザ溶接・焼け取り・研磨を組み合わせ、液溜まりや汚れが残りにくい、洗浄性を考慮したステンレス製品を製作します。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&family=Poppins:wght@600&family=Inter:wght@700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>株式会社豊栄製作所</h1>
-  </header>
-  <main>
-    <p>ただいま準備中です。</p>
-  </main>
-  <footer>
-    <small>&copy; 株式会社豊栄製作所</small>
-  </footer>
-  <script src="assets/js/main.js"></script>
+
+<header class="header">
+  <a class="header__brand" href="./">
+    <img class="header__logo" src="assets/images/logo.webp" width="240" height="66" alt="HOUEI">
+    <span class="header__name">株式会社豊栄製作所</span>
+  </a>
+  <button class="header__menu" type="button" aria-label="メニューを開く" data-menu-open>
+    <span class="material-symbols-outlined">menu</span>
+  </button>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <div class="menu__backdrop" data-menu-close></div>
+  <div class="menu__panel">
+    <div class="menu__head">
+      <a class="menu__brand" href="./">
+        <img src="assets/images/logo.webp" width="240" height="66" alt="HOUEI">
+        <span>株式会社豊栄製作所</span>
+      </a>
+      <button class="menu__close" type="button" aria-label="メニューを閉じる" data-menu-close>
+        <span class="material-symbols-outlined">clear</span>
+      </button>
+    </div>
+    <nav class="menu__nav">
+      <a href="./" data-menu-close><span class="menu__en">Top</span><span class="menu__ja">トップ</span></a>
+      <a href="#solutions" data-menu-close><span class="menu__en">Solutions</span><span class="menu__ja">解決できること</span></a>
+      <a href="#strengths" data-menu-close><span class="menu__en">Strengths</span><span class="menu__ja">強み</span></a>
+      <a href="#technique" data-menu-close><span class="menu__en">Technique</span><span class="menu__ja">技術</span></a>
+      <a href="#works" data-menu-close><span class="menu__en">Works</span><span class="menu__ja">加工事例</span></a>
+      <a href="#capabilities" data-menu-close><span class="menu__en">Capabilities</span><span class="menu__ja">加工範囲</span></a>
+      <a href="#quality" data-menu-close><span class="menu__en">Quality</span><span class="menu__ja">品質</span></a>
+      <a href="#company" data-menu-close><span class="menu__en">Company</span><span class="menu__ja">会社概要</span></a>
+    </nav>
+    <a class="btn btn--primary menu__btn" href="contact.html"><span class="material-symbols-outlined">mail_outline</span>相談する</a>
+    <a class="menu__tel" href="tel:06-6866-0140">
+      <img src="assets/images/icon-phone.svg" width="28" height="28" alt="">
+      <span class="menu__tel-body"><span class="menu__tel-num">06-6866-0140</span><span class="menu__tel-hours">受付時間（平日9:00～17:00）</span></span>
+    </a>
+  </div>
+</div>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__image"><img src="assets/images/hero.webp" alt="サニタリー配管のフェルール"></div>
+    <div class="hero__body">
+      <h1 class="hero__title">食品・医薬品設備に、<br>洗浄しやすさまで考えたサニタリー加工を。</h1>
+      <p class="hero__lead">フェルール溶接、サニタリー配管、タンク・ホッパー改造、ノズル追加から装置製作まで。<br>豊栄製作所は、真空装置製作で培った溶接技術と内製化体制で、設計段階から対応します。</p>
+      <a class="btn btn--primary" href="contact.html"><span class="material-symbols-outlined">mail_outline</span>相談する</a>
+    </div>
+  </section>
+
+  <!-- Solutions -->
+  <section class="section solutions" id="solutions">
+    <div class="container">
+      <div class="heading heading--right">
+        <p class="heading__ja">解決できること</p>
+        <p class="heading__en">Solutions</p>
+      </div>
+      <div class="solutions__body">
+        <div class="solutions__images">
+          <img class="solutions__img solutions__img--1" src="assets/images/solutions-1.webp" alt="">
+          <img class="solutions__img solutions__img--2" src="assets/images/solutions-2.webp" alt="">
+          <img class="solutions__img solutions__img--3" src="assets/images/solutions-3.webp" alt="">
+        </div>
+        <div class="solutions__text">
+          <h2 class="solutions__title">こんなお悩み、<br>豊栄製作所なら解決できます！</h2>
+          <div class="solutions__paras">
+            <p>食品・医薬品設備のサニタリー加工は、<strong class="em-red">「図面通りに作る」</strong>だけでは十分ではありません。</p>
+            <p>洗浄しやすい形状、溶接部の仕上がり、液溜まりへの配慮など、使用環境まで考えた製作が求められます。</p>
+            <p>豊栄製作所では、図面が固まる前のご相談から、試作・小ロット、溶接、研磨、仕上げまで一貫して対応。</p>
+            <p>&nbsp;<strong class="em-red">「どこに頼めばいいか分からない」</strong>といった段階からご相談いただけます。</p>
+          </div>
+          <div class="btn-wrap"><a class="btn btn--primary" href="contact.html"><span class="material-symbols-outlined">mail_outline</span>相談する</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strengths -->
+  <section class="section strengths" id="strengths">
+    <div class="container">
+      <div class="heading">
+        <p class="heading__ja">強み</p>
+        <p class="heading__en">Strengths</p>
+      </div>
+    </div>
+    <div class="strengths__box">
+      <div class="strengths__inner">
+        <div class="strengths__text">
+          <h2 class="strengths__title">洗浄性と清潔感に配慮したサニタリー仕上げ。</h2>
+          <div class="strengths__paras">
+            <p>サニタリー用途のステンレス部品では、溶接後の焼け・段差・隙間・バリが、洗浄不良や腐食、異物混入の原因になることがあります。</p>
+            <p>豊栄製作所では、TIG溶接・レーザ溶接に加え、焼け取り、ビード仕上げ、バフ仕上げ、酸洗いなど、用途に応じた仕上げに対応しています。</p>
+            <p>食品・医薬・化粧品・研究設備向けの部品に求められる<strong class="em-yellow">「清潔感のある外観」</strong>と<strong class="em-yellow">「洗浄しやすい形状」</strong>を意識し、フェルール溶接、サニタリー配管、タンク・ホッパー改造、ノズル追加などを一つ一つ丁寧に加工します。</p>
+          </div>
+          <div class="btn-wrap"><a class="btn btn--white" href="contact.html"><span class="material-symbols-outlined">mail_outline</span>相談する</a></div>
+        </div>
+        <img class="strengths__img" src="assets/images/strengths.webp" width="800" height="800" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Technique -->
+  <section class="section technique" id="technique">
+    <div class="container">
+      <div class="heading heading--right">
+        <p class="heading__ja">技術</p>
+        <p class="heading__en">Technique</p>
+      </div>
+    </div>
+    <div class="technique__box">
+      <div class="technique__inner">
+        <div class="technique__top">
+          <img class="technique__img1" src="assets/images/technique-1.webp" width="800" height="800" alt="">
+          <div class="technique__text">
+            <h2 class="technique__title">洗浄性と耐食性は、<br>溶接部の仕上がりで変わります。</h2>
+            <div class="technique__paras">
+              <p>食品・医薬品設備に使用されるサニタリー製品は、</p>
+              <p><strong class="em-red">「製品内部を清潔に保ち、繰り返し洗浄できる形状」</strong>が求められます。</p>
+              <p>しかし、溶接部に段差や隙間、凹凸が残ると、原料や洗浄液が滞留しやすくなります。</p>
+              <p>また、溶接時に発生する<em class="marker">焼け</em>を適切に除去しない場合、外観だけでなく、ステンレス本来の<em class="marker">耐食性</em>に影響することがあります。</p>
+              <p>そのため、サニタリー溶接では、単に強度を確保するだけでなく、次の点を総合的に管理しなければなりません。</p>
+            </div>
+          </div>
+        </div>
+        <ol class="technique__list">
+          <li><span class="technique__num">01</span><span class="technique__item">段差や隙間を抑えた接合</span></li>
+          <li><span class="technique__num">02</span><span class="technique__item">洗浄しやすい滑らかなビード形状</span></li>
+          <li><span class="technique__num">03</span><span class="technique__item">溶け込み不足や過度な溶接変形の防止</span></li>
+          <li><span class="technique__num">04</span><span class="technique__item">溶接焼けや酸化皮膜の適切な除去</span></li>
+          <li><span class="technique__num">05</span><span class="technique__item">バリや研磨傷を残さない仕上げ</span></li>
+          <li><span class="technique__num">06</span><span class="technique__item">使用環境に応じた材質、溶接方法、仕上げ方法の選定</span></li>
+        </ol>
+        <div class="technique__bottom">
+          <div class="technique__paras technique__paras--bottom">
+            <p>豊栄製作所では、製品の用途や形状、板厚、使用環境を確認したうえで、TIG溶接やレーザ溶接、焼け取り、ビード仕上げ、バフ仕上げ、酸洗いなどを使い分けています。</p>
+            <p><strong class="em-red">「きれいに見えるか」</strong>だけでなく、<em class="marker">洗浄性～耐食性～気密性</em>まで考えた加工を行うことが、サニタリー製品の品質に直結します。</p>
+          </div>
+          <img class="technique__img2" src="assets/images/technique-2.webp" width="1042" height="580" alt="">
+        </div>
+        <div class="btn-wrap"><a class="btn btn--primary" href="contact.html"><span class="material-symbols-outlined">mail_outline</span>相談する</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section class="section works" id="works">
+    <div class="container">
+      <div class="heading">
+        <p class="heading__ja">加工事例</p>
+        <p class="heading__en">Works</p>
+      </div>
+      <div class="works__grid">
+        <img src="assets/images/works-1.webp" width="1000" height="748" alt="加工事例1">
+        <img src="assets/images/works-2.webp" width="1000" height="748" alt="加工事例2">
+        <img src="assets/images/works-3.webp" width="1000" height="748" alt="加工事例3">
+        <img src="assets/images/works-4.webp" width="1002" height="748" alt="加工事例4">
+        <img src="assets/images/works-5.webp" width="1000" height="748" alt="加工事例5">
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities -->
+  <section class="section capabilities" id="capabilities">
+    <div class="container">
+      <div class="heading heading--right">
+        <p class="heading__ja">加工範囲</p>
+        <p class="heading__en">Capabilities</p>
+      </div>
+      <p class="capabilities__lead">試作・小ロットから、さまざまな形状・サイズに対応。</p>
+      <img class="capabilities__img" src="assets/images/capabilities.webp" width="2229" height="640" alt="対応品目">
+      <dl class="capabilities__list">
+        <div class="capabilities__row">
+          <dt>対応品目</dt>
+          <dd><span>配管／タンク・ホッパー／板金部品</span></dd>
+        </div>
+        <div class="capabilities__row">
+          <dt>対応サイズ</dt>
+          <dd><span>小型部品からタンク・製缶品まで</span><span class="capabilities__note">※形状・板厚・サイズにより個別確認</span></dd>
+        </div>
+        <div class="capabilities__row">
+          <dt>対応材質</dt>
+          <dd><span>SUS304／SUS304L／SUS310／SUS316／SUS316L</span><span class="capabilities__note">※その他材質は要相談</span></dd>
+        </div>
+      </dl>
+      <div class="btn-wrap"><a class="btn btn--primary" href="contact.html"><span class="material-symbols-outlined">mail_outline</span>相談する</a></div>
+    </div>
+  </section>
+
+  <!-- Quality -->
+  <section class="section quality" id="quality">
+    <div class="container">
+      <div class="heading">
+        <p class="heading__ja">品質</p>
+        <p class="heading__en">Quality</p>
+      </div>
+      <div class="quality__grid">
+        <div class="quality__item quality__item--side">
+          <div class="quality__text">
+            <h3 class="quality__title"><strong>01.</strong> 出荷前の検品を徹底</h3>
+            <p>寸法・外観・溶接部・研磨状態など、製品ごとに必要な項目を確認してから出荷します。</p>
+          </div>
+          <img src="assets/images/quality-1.webp" width="552" height="414" alt="">
+        </div>
+        <div class="quality__item quality__item--side">
+          <div class="quality__text">
+            <h3 class="quality__title"><strong>02.</strong> 製作履歴を管理</h3>
+            <p>材料や製作内容などの情報を管理し、必要に応じて製品を遡って確認できる体制を敷いています。</p>
+          </div>
+          <img src="assets/images/quality-2.webp" width="464" height="348" alt="">
+        </div>
+        <div class="quality__item">
+          <h3 class="quality__title"><strong>03.</strong> 工程ごとに品質を確認</h3>
+          <p>完成後だけではなく、溶接・仕上げなど各工程で状態を確認。<br>後工程での手直しや品質のバラつきを防ぎます。</p>
+          <div class="placeholder placeholder--quality3"></div>
+        </div>
+        <div class="quality__item">
+          <h3 class="quality__title"><strong>04.</strong> 納期も品質の一つ</h3>
+          <p>受注時に製作工程を確認し、無理のないスケジュールを設定。<br>品質を維持したうえで、約束した納期での納品を目指します。</p>
+          <div class="placeholder placeholder--quality4"></div>
+        </div>
+      </div>
+      <div class="btn-wrap"><a class="btn btn--primary" href="contact.html"><span class="material-symbols-outlined">mail_outline</span>相談する</a></div>
+    </div>
+  </section>
+
+  <!-- Company + Contact -->
+  <div class="lower">
+    <section class="section company" id="company">
+      <div class="container">
+        <div class="heading heading--right">
+          <p class="heading__ja">会社概要</p>
+          <p class="heading__en">Company</p>
+        </div>
+      </div>
+      <div class="company__body">
+        <div class="placeholder company__img"></div>
+        <dl class="company__table">
+          <div><dt>会社名</dt><dd>株式会社 豊栄製作所</dd></div>
+          <div><dt>代表取締役</dt><dd>北坂 規朗</dd></div>
+          <div><dt>設立</dt><dd>1976年8月</dd></div>
+          <div><dt>資本金</dt><dd>1,000万円</dd></div>
+          <div><dt>所在地</dt><dd><span>〒561-0845</span><span>大阪府豊中市利倉1-13-15</span></dd></div>
+          <div><dt>電話番号</dt><dd><a href="tel:06-6866-0140">06-6866-0140</a></dd></div>
+          <div><dt>メールアドレス</dt><dd><a href="mailto:soudan@houeiz.com">soudan@houeiz.com</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__bg"><img src="assets/images/contact-bg.webp" alt=""></div>
+      <div class="contact__inner">
+        <p class="contact__title">お気軽にご相談ください。</p>
+        <p class="contact__lead">「この加工は対応できる？」「現物しかないけど相談したい」「短納期でも対応できる？」<br>そんな段階からでも、お気軽にご相談ください。<br>お客様の用途やご要望に合わせて最適な加工方法をご提案いたします。</p>
+        <div class="contact__actions">
+          <a class="contact__tel" href="tel:06-6866-0140">
+            <img src="assets/images/icon-phone-white.svg" width="28" height="28" alt="">
+            <span class="contact__tel-body"><span class="contact__tel-num">06-6866-0140</span><span class="contact__tel-hours">受付時間（平日9:00～17:00）</span></span>
+          </a>
+          <a class="btn btn--primary" href="contact.html"><span class="material-symbols-outlined">mail_outline</span>相談する</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__info">
+          <a href="./"><img class="footer__logo" src="assets/images/logo.webp" width="240" height="66" alt="HOUEI"></a>
+          <p class="footer__name">株式会社豊栄製作所</p>
+          <p class="footer__addr">〒561-0845 大阪府豊中市利倉1-13-15</p>
+          <p class="footer__tel"><a href="tel:06-6866-0140">TEL : 06-6866-0140</a><span>FAX : 06-6866-0146</span></p>
+          <p class="footer__mail"><a href="mailto:soudan@houeiz.com">E-mail : soudan@houeiz.com</a></p>
+        </div>
+        <nav class="footer__nav">
+          <a href="./">トップ<span class="material-symbols-outlined">arrow_forward</span></a>
+          <a href="#solutions">解決できること<span class="material-symbols-outlined">arrow_forward</span></a>
+          <a href="#strengths">強み<span class="material-symbols-outlined">arrow_forward</span></a>
+          <a href="#technique">技術<span class="material-symbols-outlined">arrow_forward</span></a>
+          <a href="#works">加工事例<span class="material-symbols-outlined">arrow_forward</span></a>
+          <a href="#capabilities">加工範囲<span class="material-symbols-outlined">arrow_forward</span></a>
+          <a href="#quality">品質<span class="material-symbols-outlined">arrow_forward</span></a>
+          <a href="#company">会社概要<span class="material-symbols-outlined">arrow_forward</span></a>
+          <a href="contact.html">お問い合わせ<span class="material-symbols-outlined">arrow_forward</span></a>
+          <a href="privacy-policy.html">プライバシーポリシー<span class="material-symbols-outlined">arrow_forward</span></a>
+        </nav>
+      </div>
+      <p class="footer__copy">©︎ 2026 株式会社 豊栄製作所. All rights reserved.</p>
+    </footer>
+  </div>
+
+</main>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
