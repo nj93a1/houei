@@ -17,6 +17,22 @@
     <img class="header__logo" src="assets/images/logo.webp" width="240" height="66" alt="HOUEI">
     <span class="header__name">株式会社豊栄製作所</span>
   </a>
+  <nav class="header__nav">
+    <a href="./">トップ</a>
+    <a href="#solutions">解決できること</a>
+    <a href="#strengths">強み</a>
+    <a href="#technique">技術</a>
+    <a href="#works">加工事例</a>
+    <a href="#capabilities">加工範囲</a>
+    <a href="#quality">品質</a>
+  </nav>
+  <div class="header__right">
+    <a class="header__contact" href="contact.html"><span class="material-symbols-outlined">mail_outline</span>お問い合わせ</a>
+    <a class="header__tel" href="tel:06-6866-0140">
+      <img src="assets/images/icon-phone.svg" width="28" height="28" alt="">
+      <span class="header__tel-body"><span class="header__tel-num">06-6866-0140</span><span class="header__tel-hours">受付時間（平日9:00～17:00）</span></span>
+    </a>
+  </div>
   <button class="header__menu" type="button" aria-label="メニューを開く" data-menu-open>
     <span class="material-symbols-outlined">menu</span>
   </button>
@@ -71,12 +87,13 @@
         <p class="heading__ja">解決できること</p>
         <p class="heading__en">Solutions</p>
       </div>
-      <div class="solutions__body">
-        <div class="solutions__images">
+    </div>
+    <div class="solutions__body">
+        <div class="solutions__images"><div class="solutions__collage">
           <img class="solutions__img solutions__img--1" src="assets/images/solutions-1.webp" alt="">
           <img class="solutions__img solutions__img--2" src="assets/images/solutions-2.webp" alt="">
           <img class="solutions__img solutions__img--3" src="assets/images/solutions-3.webp" alt="">
-        </div>
+        </div></div>
         <div class="solutions__text">
           <h2 class="solutions__title">こんなお悩み、<br>豊栄製作所なら解決できます！</h2>
           <div class="solutions__paras">
@@ -87,7 +104,6 @@
           </div>
           <div class="btn-wrap"><a class="btn btn--primary" href="contact.html"><span class="material-symbols-outlined">mail_outline</span>相談する</a></div>
         </div>
-      </div>
     </div>
   </section>
 
@@ -160,7 +176,7 @@
 
   <!-- Works -->
   <section class="section works" id="works">
-    <div class="container">
+    <div class="works__inner">
       <div class="heading">
         <p class="heading__ja">加工事例</p>
         <p class="heading__en">Works</p>
@@ -227,12 +243,12 @@
         <div class="quality__item">
           <h3 class="quality__title"><strong>03.</strong> 工程ごとに品質を確認</h3>
           <p>完成後だけではなく、溶接・仕上げなど各工程で状態を確認。<br>後工程での手直しや品質のバラつきを防ぎます。</p>
-          <div class="placeholder placeholder--quality3"></div>
+          <img class="quality__wide" src="assets/images/quality-3.webp" width="1120" height="662" alt="製作工程">
         </div>
         <div class="quality__item">
           <h3 class="quality__title"><strong>04.</strong> 納期も品質の一つ</h3>
           <p>受注時に製作工程を確認し、無理のないスケジュールを設定。<br>品質を維持したうえで、約束した納期での納品を目指します。</p>
-          <div class="placeholder placeholder--quality4"></div>
+          <img class="quality__wide" src="assets/images/quality-4.webp" width="1120" height="641" alt="製作スケジュール（例）">
         </div>
       </div>
       <div class="btn-wrap"><a class="btn btn--primary" href="contact.html"><span class="material-symbols-outlined">mail_outline</span>相談する</a></div>
@@ -249,7 +265,7 @@
         </div>
       </div>
       <div class="company__body">
-        <div class="placeholder company__img"></div>
+        <div class="company__img"><img src="assets/images/company.webp" width="1800" height="930" alt="工場内の製品"></div>
         <dl class="company__table">
           <div><dt>会社名</dt><dd>株式会社 豊栄製作所</dd></div>
           <div><dt>代表取締役</dt><dd>北坂 規朗</dd></div>
@@ -263,16 +279,17 @@
     </section>
 
     <section class="contact" id="contact">
-      <div class="contact__bg"><img src="assets/images/contact-bg.webp" alt=""></div>
       <div class="contact__inner">
         <p class="contact__title">お気軽にご相談ください。</p>
-        <p class="contact__lead">「この加工は対応できる？」「現物しかないけど相談したい」「短納期でも対応できる？」<br>そんな段階からでも、お気軽にご相談ください。<br>お客様の用途やご要望に合わせて最適な加工方法をご提案いたします。</p>
-        <div class="contact__actions">
-          <a class="contact__tel" href="tel:06-6866-0140">
-            <img src="assets/images/icon-phone-white.svg" width="28" height="28" alt="">
-            <span class="contact__tel-body"><span class="contact__tel-num">06-6866-0140</span><span class="contact__tel-hours">受付時間（平日9:00～17:00）</span></span>
-          </a>
-          <a class="btn btn--primary" href="contact.html"><span class="material-symbols-outlined">mail_outline</span>相談する</a>
+        <div class="contact__body">
+          <p class="contact__lead">「この加工は対応できる？」「現物しかないけど相談したい」「短納期でも対応できる？」<br>そんな段階からでも、お気軽にご相談ください。<br>お客様の用途やご要望に合わせて最適な加工方法をご提案いたします。</p>
+          <div class="contact__actions">
+            <a class="contact__tel" href="tel:06-6866-0140">
+              <img src="assets/images/icon-phone-white.svg" width="28" height="28" alt="">
+              <span class="contact__tel-body"><span class="contact__tel-num">06-6866-0140</span><span class="contact__tel-hours">受付時間（平日9:00～17:00）</span></span>
+            </a>
+            <a class="btn btn--primary" href="contact.html"><span class="material-symbols-outlined">mail_outline</span>相談する</a>
+          </div>
         </div>
       </div>
     </section>
@@ -299,7 +316,7 @@
           <a href="privacy-policy.html">プライバシーポリシー<span class="material-symbols-outlined">arrow_forward</span></a>
         </nav>
       </div>
-      <p class="footer__copy">©︎ 2026 株式会社 豊栄製作所. All rights reserved.</p>
+      <div class="container"><p class="footer__copy">©︎ 2026 株式会社 豊栄製作所. All rights reserved.</p></div>
     </footer>
   </div>
 
