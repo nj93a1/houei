@@ -1,0 +1,11 @@
+:root {
+  --color-text: #222;
+  --color-bg: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
